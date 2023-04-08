@@ -6,7 +6,6 @@ on:
 
 env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }}
-  NODE_OPTIONS: --openssl-legacy-provider
 
 jobs:
   build:
@@ -21,6 +20,10 @@ jobs:
         id: setup-python2
         with:
           python-version: 2.7
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 17
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install dependencies
