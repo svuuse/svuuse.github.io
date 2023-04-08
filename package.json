@@ -63,7 +63,7 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "deploy:ci": "npm install gh-pages --save --legacy-peer-deps && gatsby build --prefix-paths && echo '$GH_TOKEN'"  
+    "deploy:ci": "npm install gh-pages --save --legacy-peer-deps && gatsby build --prefix-paths && echo $GH_TOKEN"  
   },
   "repository": {
     "type": "git",
