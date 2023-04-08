@@ -15,6 +15,7 @@ jobs:
         run: |
           git config --global user.email "svuu.se@gmail.com"
           git config --global user.name "svuuse"
+          git config --global user.password "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"
       - name: Set up Python2.7
         uses: actions/setup-python@v4
         id: setup-python2
