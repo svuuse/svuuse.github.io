@@ -70,7 +70,7 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  },
   "deploy": "gatsby build --prefix-paths && gh-pages -d public",
   "deploy:ci": "gatsby build --prefix-paths && gh-pages -d public -r https://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@github.com/svuuse/svuuse.github.io"
 }
