@@ -30,4 +30,4 @@ jobs:
         run: |
           npm install --legacy-peer-deps
       - name: Deploy
-        run: echo "test"
+        run: npm run deploy:ci
