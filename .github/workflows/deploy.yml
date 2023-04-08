@@ -21,6 +21,8 @@ jobs:
         id: setup-python2
         with:
           python-version: 2.7
+      - name: Git Version
+        uses: codacy/git-version@1.9.0
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
