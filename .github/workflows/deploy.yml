@@ -22,9 +22,11 @@ jobs:
           python-version: 2.7
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Set env
+        run: echo "NODE_OPTIONS=--openssl-legacy-provider" >> $GITHUB_ENV
       - name: Install dependencies
         run: |
           npm install --legacy-peer-deps
-          npm audit fix --force
       - name: Deploy
-        run: npm run deploy:ci
+        run: |
+	  npm run deploy:ci
