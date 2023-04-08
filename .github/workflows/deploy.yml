@@ -22,7 +22,7 @@ jobs:
         with:
           python-version: 2.7
       - name: Git Version
-        uses: codacy/git-version@1.9.0
+        uses: codacy/git-version@2.7.1
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
