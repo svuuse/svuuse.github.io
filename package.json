@@ -63,7 +63,7 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "deploy:ci": "npm install gh-pages --save && gatsby build --prefix-paths && gh-pages -d public -r https://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@github.com/svuuse/svuuse.github.io"  
+    "deploy:ci": "npm install gh-pages --save && gatsby build --prefix-paths && gh-pages -d public -r https://$GH_TOKEN@github.com/svuuse/svuuse.github.io"  
   },
   "repository": {
     "type": "git",
