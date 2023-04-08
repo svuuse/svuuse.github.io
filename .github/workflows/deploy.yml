@@ -15,12 +15,15 @@ jobs:
         run: |
           git config --global user.email "svuu.se@gmail.com"
           git config --global user.name "svuuse"
+      - name: Set up Python2.7
+        uses: actions/setup-python@v4
+        id: setup-python2
+        with:
+          python-version: 2.7
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install dependencies
         run: |
           npm install --legacy-peer-deps
-	with:
-          python-version: 2.7
       - name: Deploy
         run: npm run deploy:ci
