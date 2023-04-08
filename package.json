@@ -64,7 +64,7 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "deploy:ci": "npm install gh-pages --save --legacy-peer-deps && gatsby build && gh-pages -d public -r https://svuuse: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@github.com/svuuse/svuuse.github.io"  
+    "deploy:ci": "npm install gh-pages --save --legacy-peer-deps && gatsby build && gh-pages -d public -r https://svuuse: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@github.com/svuuse/svuuse.github.io"  
   },
   "repository": {
     "type": "git",
