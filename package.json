@@ -25,8 +25,8 @@
     "gatsby-transformer-json": "^2.4.5",
     "gatsby-transformer-remark": "^2.8.28",
     "gatsby-transformer-sharp": "^2.5.5",
-    "gh-pages": "^5.0.0",
     "google-map-react": "^2.1.9",
+    "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.1",
@@ -35,7 +35,7 @@
     "react-helmet": "^6.1.0",
     "react-hook-form": "^6.8.3",
     "react-icons": "^3.10.0",
-    "react-tsparticles": "^2.9.3",
+    "react-particles-js": "^3.4.1",
     "react-scrollmagic": "^2.2.0",
     "react-scrollspy": "^3.4.3",
     "react-slick": "^0.27.13",
@@ -69,7 +69,5 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
-  "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-  "deploy:ci": "gatsby build --prefix-paths && gh-pages -d public -r https://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@github.com/svuuse/svuuse.github.io"
+  }
 }
