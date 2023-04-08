@@ -26,7 +26,6 @@
     "gatsby-transformer-remark": "^2.8.28",
     "gatsby-transformer-sharp": "^2.5.5",
     "google-map-react": "^2.1.9",
-    "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.1",
@@ -65,9 +64,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/svuuse/svuuse.github.io"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  },
+  "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+  "deploy:ci": "gatsby build --prefix-paths && gh-pages -d public -r https://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@github.com/svuuse/svuuse.github.io"
 }
