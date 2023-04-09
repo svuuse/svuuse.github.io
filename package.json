@@ -64,7 +64,7 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "deploy:ci": "npm install gh-pages --save --legacy-peer-deps && gatsby build && git remote remove origin && git remote add origin https://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@github.com/svuuse/svuuse.github.io && gh-pages -d public"
+    "deploy:ci": "npm install gh-pages --save --legacy-peer-deps && gatsby build && git remote set-url origin https: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://@github.com/svuuse/svuuse.github.io && gh-pages -d public"
   },
   "repository": {
     "type": "git",
