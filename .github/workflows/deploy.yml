@@ -11,8 +11,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Git Version
-        uses: codacy/git-version@2.7.1
       - name: GitHub Config
         run: |
           git config --global user.email "svuu.se@gmail.com"
@@ -29,6 +27,8 @@ jobs:
           node-version: 16
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Git Version
+        uses: codacy/git-version@2.7.1
       - name: Install dependencies
         run: |
           npm install --legacy-peer-deps
