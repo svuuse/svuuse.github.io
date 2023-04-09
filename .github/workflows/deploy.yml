@@ -11,6 +11,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Git Version
+        uses: codacy/git-version@2.4.0
       - name: GitHub Config
         run: |
           git config --global user.email "svuu.se@gmail.com"
@@ -28,17 +30,8 @@ jobs:
           node-version: 16
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Git Version
-        uses: codacy/git-version@2.7.1
       - name: Install dependencies
         run: |
           npm install --legacy-peer-deps
       - name: Deploy
         run: npm run deploy:ci
-      - name: Store the built files
-        uses: s0/git-publish-subdir-action@master
-        env:
-          REPO: self
-          BRANCH: main
-          FOLDER: public
-          GITHUB_TOKEN: "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"
