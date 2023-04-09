@@ -1,7 +1,7 @@
 [
     {
         "id": "main-banner",
-        "title": "Bernard <span class='color-primary'>Sydney</span>",
+        "title": "Sinh vien <span class='color-primary'>Uppsala</span>",
         "subtitle": "Creative Web & App Developer",
         "bgImage": "./images/banner/bg-image-02.jpg",
         "image": "./images/banner/person-image.jpg"
