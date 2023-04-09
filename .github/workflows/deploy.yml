@@ -41,4 +41,4 @@ jobs:
           REPO: self
           BRANCH: main
           FOLDER: public
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: "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"
