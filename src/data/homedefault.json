@@ -1,9 +1,9 @@
 [
     {
         "id": "main-banner",
-        "title": "Sinh vien <span class='color-primary'>Uppsala</span>",
-        "subtitle": "Creative Web & App Developer",
-        "bgImage": "./images/banner/bg-image-02.jpg",
+        "title": "Hội sinh viên <span class='color-primary'>Uppsala</span>",
+        "subtitle": "Hội sinh viên Việt Nam tại Uppsala, Thuỵ Điển",
+        "bgImage": "./images/banner/wp4195605.jpg",
         "image": "./images/banner/person-image.jpg"
     },
 
