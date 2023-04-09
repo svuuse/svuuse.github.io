@@ -15,8 +15,7 @@ jobs:
         run: |
           git config --global user.email "svuu.se@gmail.com"
           git config --global user.name "svuuse"
-          git config --global user.password "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"
-	  git remote set-url origin https://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@github.com/svuuse/svuuse.github.io
+	  git remote set-url origin https://${{ secrets.GH_TOKEN }}@github.com/svuuse/svuuse.github.io
       - name: Set up Python2.7
         uses: actions/setup-python@v4
         id: setup-python2
