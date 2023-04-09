@@ -33,6 +33,4 @@ jobs:
         run: |
           npm install --legacy-peer-deps
       - name: Deploy
-        uses: enriikke/gatsby-gh-pages-action@v2
-        with:
-          access-token: "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"
+        run: npm run deploy:ci
