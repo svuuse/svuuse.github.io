@@ -35,8 +35,10 @@ jobs:
           npm install --legacy-peer-deps
       - name: Deploy
         run: npm run deploy:ci
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          path: |
-            public
+      - name: Store the built files
+        uses: s0/git-publish-subdir-action@master
+        env:
+          REPO: self
+          BRANCH: main
+          FOLDER: public
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
