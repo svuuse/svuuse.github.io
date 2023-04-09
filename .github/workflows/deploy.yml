@@ -11,6 +11,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Git Version
+        uses: codacy/git-version@2.7.1
       - name: GitHub Config
         run: |
           git config --global user.email "svuu.se@gmail.com"
@@ -21,8 +23,6 @@ jobs:
         id: setup-python2
         with:
           python-version: 2.7
-      - name: Git Version
-        uses: codacy/git-version@2.7.1
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
