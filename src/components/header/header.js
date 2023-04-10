@@ -16,7 +16,7 @@ const Header = () => {
                     path
                 }
             },
-            file(relativePath: {eq: "images/logo/logo_uu.png"}) {
+            file(relativePath: {eq: "images/logo/logo-uu.png"}) {
                 childImageSharp {
                     fixed (quality: 100, width: 70, height: 35) {
                         ...GatsbyImageSharpFixed

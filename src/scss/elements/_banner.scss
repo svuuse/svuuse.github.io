@@ -92,6 +92,8 @@
                         line-height: 1.1;
                         display: block;
                         -webkit-text-stroke: transparent;
+                        white-space: nowrap;
+                        
                         @media #{$lg-layout} {
                             font-size: 96px;
                         }

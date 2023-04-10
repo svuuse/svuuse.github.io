@@ -1,15 +1,15 @@
 import React from 'react';
-import {useStaticQuery, graphql} from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import Slider from "react-slick";
 
 import bannerImage from '../images/banner/bg-image-02.jpg';
-import bannerImage2 from '../images/banner/bg-image-04.jpg';
-import bannerImage3 from '../images/banner/bg-image-05.jpg';
+import bannerImage2 from '../images/banner/bg-image-09.jpg';
+import bannerImage3 from '../images/banner/bg-image-01.jpg';
 
 
 
 const Banner = () => {
-    const banenrQueryData = useStaticQuery (graphql`
+    const banenrQueryData = useStaticQuery(graphql`
         query BannerDefaultQuery {
                 homedefaultJson(id: {eq: "main-banner"}) {
                 title    
@@ -33,7 +33,7 @@ const Banner = () => {
             }
         }
     `);
-      
+
     // const BannerImages = banenrQueryData.homedefaultJson.bgImage.childImageSharp.fluid;
     const PortfolioImages = banenrQueryData.file.childImageSharp.fixed;
     const Title = banenrQueryData.homedefaultJson.title;
@@ -72,7 +72,7 @@ const Banner = () => {
             {/* End Single Slider  */}
             <div className="thumbnail">
                 <Slider {...settings}>
-                    
+
                     <div className="thumbnail-inner">
                         <img src={bannerImage2} alt="Testimonail Images" />
                     </div>
@@ -81,7 +81,7 @@ const Banner = () => {
                     </div>
                 </Slider>
             </div>
-           
+
         </div>
     )
 }
