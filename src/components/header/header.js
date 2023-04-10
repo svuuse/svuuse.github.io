@@ -61,7 +61,7 @@ const Header = () => {
                                         <li>
                                             <a className="menu-hover-link" href="/#home">
                                                 <span className="hover-item">
-                                                    <span data-text="Home">Home</span>
+                                                    <span data-text="Trang chủ">Trang chủ</span>
                                                 </span>
                                             </a>
                                         </li>
@@ -69,15 +69,7 @@ const Header = () => {
                                         <li>
                                             <a className="menu-hover-link" href="/#about">
                                                 <span className="hover-item">
-                                                    <span data-text="About">About</span>
-                                                </span>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a className="menu-hover-link" href="/#portfolio">
-                                                <span className="hover-item">
-                                                    <span data-text="Portfolio">Portfolio</span>
+                                                    <span data-text="Hội SVUU">Hội SVUU</span>
                                                 </span>
                                             </a>
                                         </li>
@@ -85,7 +77,15 @@ const Header = () => {
                                         <li>
                                             <a className="menu-hover-link" href="/#news">
                                                 <span className="hover-item">
-                                                    <span data-text="News">News</span>
+                                                    <span data-text="Nhật ký SVUU">Nhật ký SVUU</span>
+                                                </span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a className="menu-hover-link" href="/#portfolio">
+                                                <span className="hover-item">
+                                                    <span data-text="Đồ lưu niệm">Đồ lưu niệm</span>
                                                 </span>
                                             </a>
                                         </li>
@@ -93,7 +93,7 @@ const Header = () => {
                                         <li>
                                             <a className="menu-hover-link" href="/#contact">
                                                 <span className="hover-item">
-                                                    <span data-text="Contact">Contact</span>
+                                                    <span data-text="Liên hệ">Liên hệ</span>
                                                 </span>
                                             </a>
                                         </li>

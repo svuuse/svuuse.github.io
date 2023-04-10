@@ -6,17 +6,16 @@
         "bgImage": "./images/banner/bg-image-02.jpg",
         "image": "./images/banner/person-image.jpg"
     },
-
     {
         "id": "about",
-        "title": "Bernard Sydney",
-        "subtitle": "Creative Web & App Developer",
-        "description": "My name is Bernard Sydney. I am a Web Developer, and I'm very passionate and dedicated to my work.",
-        "description2": "With 20 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.",
-        "downloadButton": "Download CV",
+        "title": "Giới thiệu về SVUU",
+        "subtitle": "Hội sinh viên Việt Nam tại Uppsala, Thụy Điển",
+        "description": "Đang được hoàn thiện ...",
+        "description2": "Đang được hoàn thiện ...",
+        "downloadButton": "Liên hệ với chúng tôi",
         "linkBUtton": "Send Message",
         "aboutData": [
-            {   
+            {
                 "id": "aboutinfo-1",
                 "iconName": "FiArrowRightCircle",
                 "label": "Birthday",
@@ -66,7 +65,6 @@
             }
         ]
     },
-
     {
         "id": "skill",
         "title": "In a <span class='theme-color'>short time</span>, I have been able to achieve excellence in all areas of development.",
@@ -87,9 +85,7 @@
                 "image": "./images/others/why-2.jpg"
             }
         ]
-        
     },
-
     {
         "id": "skillTwo",
         "title": "My Skills in <span class='theme-color'>Years</span>",

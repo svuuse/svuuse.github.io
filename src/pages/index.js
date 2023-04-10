@@ -12,7 +12,7 @@ import Contact from "../elements/contact/contact";
 
 const Index = () => (
   <Layout>
-    <SEO title="Waxon" />
+    <SEO title="SVUU.se" />
     <Banner />
     <About />
     <Service />
