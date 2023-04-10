@@ -1,13 +1,13 @@
 import React, { useState, useEffect, Fragment } from "react"
 import PropTypes from "prop-types";
-import {useStaticQuery, graphql , Link} from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import Img from "gatsby-image";
 import Scrollspy from 'react-scrollspy';
 
 // Start Header Area 
 const Header = () => {
 
-    
+
     const headerQuery = useStaticQuery(graphql`
         query headerQuery {
             allMenuJson {
@@ -16,7 +16,7 @@ const Header = () => {
                     path
                 }
             },
-            file(relativePath: {eq: "images/logo/logo.png"}) {
+            file(relativePath: {eq: "images/logo/logo_uu.png"}) {
                 childImageSharp {
                     fixed (quality: 100, width: 70, height: 35) {
                         ...GatsbyImageSharpFixed
@@ -29,7 +29,7 @@ const Header = () => {
     const [scroll, setScroll] = useState(false)
     useEffect(() => {
         window.addEventListener("scroll", () => {
-        setScroll(window.scrollY > 10)
+            setScroll(window.scrollY > 10)
         })
     }, [])
 
@@ -47,7 +47,7 @@ const Header = () => {
                                 <div className="header-left">
                                     <div className="logo">
                                         <Link to="/">
-                                            <Img fixed={waxonLogo}  />
+                                            <Img fixed={waxonLogo} />
                                         </Link>
                                     </div>
                                 </div>
@@ -57,7 +57,7 @@ const Header = () => {
                             {/* Start Mainmenu Area  */}
                             <div className="col-lg-9">
                                 <div className="menu_wrapper">
-                                    <Scrollspy className="mainmenuwrapper" items={['home','about', 'portfolio',  'news' , 'contact']} currentClassName="is-current" offset={-200}>
+                                    <Scrollspy className="mainmenuwrapper" items={['home', 'about', 'portfolio', 'news', 'contact']} currentClassName="is-current" offset={-200}>
                                         <li>
                                             <a className="menu-hover-link" href="/#home">
                                                 <span className="hover-item">
@@ -73,7 +73,7 @@ const Header = () => {
                                                 </span>
                                             </a>
                                         </li>
-                                        
+
                                         <li>
                                             <a className="menu-hover-link" href="/#portfolio">
                                                 <span className="hover-item">
@@ -97,31 +97,31 @@ const Header = () => {
                                                 </span>
                                             </a>
                                         </li>
-                                        
+
                                     </Scrollspy>
                                 </div>
                             </div>
                             {/* End Mainmenu Area  */}
                         </div>
                     </div>
-                    
 
-                    
-                    
+
+
+
                 </div>
             </header>
-           
+
         </Fragment>
     )
 }
 // End Header Area 
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+    siteTitle: PropTypes.string,
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+    siteTitle: ``,
 }
 
 export default Header;
